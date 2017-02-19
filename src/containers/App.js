@@ -2,28 +2,33 @@ import React, { Component } from 'react'
 import Header from '../components/Header'
 
 class App extends Component {
+
   constructor() {
     super()
     this.state = {
-      users: []
+      repos: []
     }
   }
 
   searchRepos(input) {
-    return fetch(`https://api.github.com/search/repositories?q=${input}`)
+    fetch(`https://api.github.com/search/repositories?q=${input}`)
       .then(res => res.json())
-      .then(data => data.items.map(repo => ({
-        name: repo.name,
-        author: repo.owner.login,
-        imageURL: repo.owner.avatar_url,
-      })))
+      .then((data) => {
+        const repos = data.items.map(repo => ({
+          name: repo.name,
+          author: repo.owner.login,
+          imageURL: repo.owner.avatar_url,
+        }))
+        console.log(repos)
+        this.setState({ repos })
+      })
+      .catch(err => console.log(err))
   }
 
   render() {
-    this.searchRepos('react').then(x => console.log(x))
     return (
       <div className="App">
-      <Header />
+        <Header />
       </div>
     )
   }
