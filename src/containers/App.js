@@ -11,7 +11,7 @@ class App extends Component {
           <h2>Welcome to React-Intro @ CUHacking</h2>
         </div>
       </div>
-    );
+    )
   }
 }
 
