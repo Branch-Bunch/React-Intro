@@ -3,8 +3,8 @@ import Header from '../components/Header'
 
 class App extends Component {
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       repos: []
     }
