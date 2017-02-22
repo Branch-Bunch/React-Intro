@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../components/Header'
+import RepoList from '../components/RepoList'
 
 class App extends Component {
 
@@ -26,9 +27,14 @@ class App extends Component {
   }
 
   render() {
+    this.fetchRepos('react')
+    const { repos } = this.state
     return (
       <div className="App">
         <Header />
+        <RepoList
+          repos={repos}
+        />
       </div>
     )
   }
