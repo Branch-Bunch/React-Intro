@@ -4,14 +4,14 @@ import SearchBar from '../components/SearchBar'
 
 class App extends Component {
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       repos: []
     }
   }
 
-  searchRepos(input) {
+  fetchRepos(input) {
     fetch(`https://api.github.com/search/repositories?q=${input}`)
       .then(res => res.json())
       .then((data) => {
