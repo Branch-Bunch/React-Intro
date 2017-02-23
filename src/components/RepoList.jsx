@@ -10,6 +10,7 @@ class RepoList extends Component {
         name={repo.name}
         author={repo.author}
         imageURL={repo.imageURL}
+        url={repo.url}
       />
     ))
 

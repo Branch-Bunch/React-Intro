@@ -22,6 +22,7 @@ class App extends Component {
           name: repo.name,
           author: repo.owner.login,
           imageURL: repo.owner.avatar_url,
+          url: repo.html_url,
         }))
         this.setState({ repos })
       })
