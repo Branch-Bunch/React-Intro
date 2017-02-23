@@ -1,6 +1,7 @@
 import React from 'react'
 
 class SearchBar extends React.Component {
+
   constructor(props) {
     super(props)
     this.updateRepo = this.updateRepo.bind(this)
@@ -8,17 +9,23 @@ class SearchBar extends React.Component {
   }
 
   updateRepo(event) {
-    this.setState({repo: event.target.value})
+    this.setState({ repo: event.target.value })
   }
 
   render() {
     const { fetchRepos } = this.props
     const { repo } = this.state
     return (
-      <form onSubmit={() => fetchRepos(repo)}>
-        <input type="text" value={repo} onChange={this.updateRepo} />
-        <input type="submit" value="Search" />
-      </form>   
+      <div>
+        <input 
+          type="text" 
+          value={repo} 
+          onChange={this.updateRepo} 
+        />
+        <button onClick={() => fetchRepos(repo)}>
+          Search
+        </button>
+      </div>
     )
   }
 }

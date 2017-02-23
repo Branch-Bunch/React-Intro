@@ -18,11 +18,11 @@ class App extends Component {
       .then(res => res.json())
       .then((data) => {
         const repos = data.items.map(repo => ({
+          id: repo.id,
           name: repo.name,
           author: repo.owner.login,
           imageURL: repo.owner.avatar_url,
         }))
-        console.log(repos)
         this.setState({ repos })
       })
       .catch(err => console.log(err))
@@ -33,6 +33,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <br/>
         <SearchBar fetchRepos={this.fetchRepos} />
         <RepoList
           repos={repos}
