@@ -6,6 +6,7 @@ class App extends Component {
 
   constructor(props) {
     super(props)
+    this.fetchRepos = this.fetchRepos.bind(this)
     this.state = {
       repos: []
     }
@@ -30,7 +31,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <SearchBar />
+        <SearchBar fetchRepos={this.fetchRepos} />
       </div>
     )
   }
