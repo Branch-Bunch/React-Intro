@@ -4,25 +4,25 @@ class SearchBar extends React.Component {
 
   constructor(props) {
     super(props)
-    this.updateRepo = this.updateRepo.bind(this)
-    this.state = { repo: '' }
+    this.updateSearchTerm= this.updateSearchTerm.bind(this)
+    this.state = { searchTerm: '' }
   }
 
-  updateRepo(event) {
-    this.setState({ repo: event.target.value })
+  updateSearchTerm(event) {
+    this.setState({ searchTerm: event.target.value })
   }
 
   render() {
     const { fetchRepos } = this.props
-    const { repo } = this.state
+    const { searchTerm } = this.state
     return (
       <div>
         <input 
           type="text" 
-          value={repo} 
-          onChange={this.updateRepo} 
+          value={searchTerm} 
+          onChange={this.updateSearchTerm} 
         />
-        <button onClick={() => fetchRepos(repo)}>
+        <button onClick={() => fetchRepos(searchTerm)}>
           Search
         </button>
       </div>
