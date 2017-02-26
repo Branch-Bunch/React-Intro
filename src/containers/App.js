@@ -1,7 +1,5 @@
 import React from 'react'
 import Header from '../components/Header'
-import SearchBar from '../components/SearchBar'
-import RepoList from '../components/RepoList'
 
 class App extends React.Component {
 
@@ -30,12 +28,9 @@ class App extends React.Component {
   }
 
   render() {
-    const { repos } = this.state
     return (
       <div className="App">
         <Header />
-        <SearchBar fetchRepos={this.fetchRepos} />
-        <RepoList repos={repos} />
       </div>
     )
   }
