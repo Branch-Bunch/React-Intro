@@ -7,7 +7,7 @@ const RepoCell = ({
   url,
 }) => (
   <div>
-    <h3>Repo: {author}/{name}</h3>
+    <h3>{author}/{name}</h3>
     <a href={url}>
       <img 
         src={imageURL} 
