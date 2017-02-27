@@ -20,7 +20,7 @@ What we'll be covering:
 - Composable - Compose components to build more complex UI
 - Reusable - Reuse the components you built
 - Flexible - Just a library not a framework
-- Learn Once, Write Anywhere - Used with React-Native, could be with Electron
+- Learn Once, Write Anywhere - Used with [React-Native](https://github.com/facebook/react-native), could be with [Electron](https://github.com/electron/electron)
 - Dynamic - Content gets updated when necessary
 
 ## How to use React? 📘
