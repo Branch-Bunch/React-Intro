@@ -3,9 +3,9 @@ React workshop talk and demo for CU-Hacking
 
 What we'll be covering:
 
-1. [What is React?](#what-is-react)
-1. [Why use React?](#why-use-react)
-1. [How to use React](#how-to-use-react)
+1. [What is React?](#what-is-react-)
+1. [Why use React?](#why-use-react-)
+1. [How to use React](#how-to-use-react-)
 1. [Demo/build time!](#demo)
 
 ## What is React? 🤔
@@ -23,7 +23,8 @@ What we'll be covering:
 - Learn Once, Write Anywhere - Used with [React-Native](https://github.com/facebook/react-native), could be with [Electron](https://github.com/electron/electron)
 - Dynamic - Content gets updated when necessary
 
-## How to use React? 📘
+## How to use React 📘
+
 ### JSX
 - Neither a string nor HTML, it is a syntax extension to JavaScript
 - For multiline JSX, wrap it in round braces
