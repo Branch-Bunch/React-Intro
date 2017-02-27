@@ -1,16 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Header from '../components/Header'
 import SearchBar from '../components/SearchBar'
 import RepoList from '../components/RepoList'
 
-class App extends Component {
+class App extends React.Component {
 
   constructor(props) {
     super(props)
-    this.fetchRepos = this.fetchRepos.bind(this)
     this.state = {
       repos: []
     }
+    this.fetchRepos = this.fetchRepos.bind(this)
   }
 
   fetchRepos(input) {
@@ -34,11 +34,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <br/>
         <SearchBar fetchRepos={this.fetchRepos} />
-        <RepoList
-          repos={repos}
-        />
+        <RepoList repos={repos} />
       </div>
     )
   }
