@@ -2,6 +2,7 @@
 React workshop talk and demo for CU-Hacking 
 
 What we'll be covering:
+
 1. [What is React?](#what-is-react)
 1. [Why use React?](#why-use-react)
 1. [How to use React](#how-to-use-react)
