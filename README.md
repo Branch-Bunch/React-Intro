@@ -8,6 +8,13 @@ What we'll be covering:
 1. [How to use React](#how-to-use-react-)
 1. [Demo/build time!](#demo)
 
+## Before we start
+Basic Terminology:
+- UI - User Interface
+- Component - A small piece of your UI
+- Library - A set of functionality you add to your program, the use it is up to you
+- Framework - Write your program on top of a framework, it dictates how you write the program
+
 ## What is React? 🤔
 - Javascript component-based library for building UIs
 - React was built to solve one problem: building large applications with data that changes over time
@@ -27,7 +34,7 @@ What we'll be covering:
 
 ### JSX
 - Neither a string nor HTML, it is a syntax extension to JavaScript
-- For multiline JSX, wrap it in round braces
+- For multi line JSX, wrap it in round braces
 
 ```js
 const element = <h1>Hello World</h1>
@@ -54,6 +61,6 @@ ReactDOM.render(
 )
 ```
 
-### Componets
+### Components in React
 - Components are like js functions. They inputs (called "props") and return React elements describing what should appear on the screen
 
