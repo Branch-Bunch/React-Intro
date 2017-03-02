@@ -1,5 +1,4 @@
 # React-Intro
-React workshop talk and demo for CU-Hacking 
 
 What we'll be covering:
 
@@ -64,3 +63,19 @@ ReactDOM.render(
 ### Components in React
 - Components are like js functions. They inputs (called "props") and return React elements describing what should appear on the screen
 
+## Common Questions
+1. What is the difference between a library and a framework?
+
+  - A library performs specific, a framework is a skeleton where the application defines the "meat" of the operation by filling out the skeleton.
+
+    Examples of libraries: Network protocols, compression, image manipulation, string utilities, regular expression evaluation, math.
+
+    Examples of frameworks: Web application system, Plug-in manager, GUI system.
+
+1. Can I just get premade components from online?
+
+  - YES! [this](http://react-component.github.io/badgeboard/) is a good one. There are also ALOT of other ones so use google and look around.
+
+1. I want to learn more where can I find some good resources?
+
+  - The [React Docs](https://facebook.github.io/react/tutorial/tutorial.html) are actually really good also google.
