@@ -27,7 +27,7 @@ Basic Terminology:
 - Reusable - Reuse the components you built
 - Flexible - Just a library not a framework
 - Learn Once, Write Anywhere - Used with [React-Native](https://github.com/facebook/react-native), could be with [Electron](https://github.com/electron/electron)
-- Dynamic - Content gets updated when necessary
+- Dynamic - Content gets render only when necessary, changes are evaluated on the "virtualDOM"
 
 ## How to use React 📘
 
