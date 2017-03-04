@@ -78,8 +78,11 @@ const buttonComponent = ({ someFunctions }) => (
 ### Presentational and Container Components
 - Presentation Components
   - Purpose: How things look (markup, styles) 
+
 - Container Components
   - Purpose: How things work (data fetching, state updates) 
+
+**Important**: Container components don’t emit DOM. They only provide composition boundaries between UI concerns and business logic of state.
 
 We strongly recommend this design pattern.
 
