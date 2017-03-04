@@ -102,3 +102,10 @@ We strongly recommend this design pattern.
 1. I want to learn more where can I find some good resources?
 
   - The [React Docs](https://facebook.github.io/react/tutorial/tutorial.html) are actually really good also google.
+
+## After Hackathon
+### 👏DONT👏USE👏REACT👏WITHOUT👏USING👏REDUX👏
+You'll be quickly find that state becomes hard to maintain. Checkout these state management frameworks!
+- Flux
+- Redux
+- Relay
