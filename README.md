@@ -15,6 +15,11 @@ Basic Terminology:
 - Framework - Write your program on top of a framework, it dictates how you write the program
 
 ## What is React? 🤔
+![img](https://i.redd.it/hikw2mqz2t1y.png)
+Westworld's Code for Android
+
+**Not a artificial intelligence framework for building androids**
+
 - Javascript component-based library for building UIs
 - React was built to solve one problem: building large applications with data that changes over time
 - ONLY concerns the view layer
