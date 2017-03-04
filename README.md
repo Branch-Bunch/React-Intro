@@ -63,6 +63,18 @@ ReactDOM.render(
 ### Components in React
 - Components are like js functions. They inputs (called "props") and return React elements describing what should appear on the screen
 
+### Handling event
+- Handling events is very similar to how you would handle events without React
+- You can pass functions to be called
+
+```js
+const buttonComponent = ({ someFunctions }) => (
+  <button onClick={someFunction}>
+   Button!
+  </button>
+)
+```
+
 ## Common Questions
 1. What is the difference between a library and a framework?
 
