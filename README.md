@@ -75,6 +75,14 @@ const buttonComponent = ({ someFunctions }) => (
 )
 ```
 
+### Presentational and Container Components
+- Presentation Components
+  - Purpose: How things look (markup, styles) 
+- Container Components
+  - Purpose: How things work (data fetching, state updates) 
+
+We strongly recommend this design pattern.
+
 ## Common Questions
 1. What is the difference between a library and a framework?
 
