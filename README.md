@@ -66,7 +66,109 @@ ReactDOM.render(
 ```
 
 ### Components in React
-- Components are like js functions. They inputs (called "props") and return React elements describing what should appear on the screen
+- Components are like js functions they return React elements describing what should appear on the screen
+- Try to make you components simple and small, for example a Facebook post might have a few components: the post, author, author profile pic, likes, etc...
+
+This is a simple component:
+
+```js
+const WelcomeMsg = () {
+  return <h1>Hello User!</h1>
+}
+```
+
+Suprise, functions have inputs, react component inputs are called "props"
+
+```js
+const WelcomeMsg = (props) => {
+  return <h1>Hello, {props.name}</h1>     //this is not considered "logic"
+}
+```
+
+Now we can COMPOSE our compoents
+
+```js
+import WelcomeMsg from './WelcomeMsg'
+
+const WelcomeUsers = () =>  {
+  return (
+    <div>
+      <WelcomeMsg name="Sara" />
+      <WelcomeMsg name="Cahal" />
+      <WelcomeMsg name="Edite" />
+    </div>
+  )
+}
+```
+But wait
+
+```js
+const Clock = (props) => {
+  return (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {props.date.toLocaleTimeString()}.</h2>
+    </div>
+  )
+}
+
+const Tick = () => {
+  ReactDOM.render(
+    <Clock date={new Date()} />,
+    document.getElementById('root')
+  )
+}
+
+setInterval(tick, 1000)
+```
+We can have local state
+
+```js
+class Clock extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Hello, world!</h1>
+        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+      </div>
+    );
+  }
+}
+```
+
+Use the setState(method)
+
+```js
+this.state.name = 'Vikram'  // This will not rerender the component
+```
+```js
+this.setState({name: 'Vikram'}) // This will work!
+```
+So now we can just create a clock like so
+
+```js
+ReactDOM.render(
+  <Clock />,
+  document.getElementById('root')
+)
+```
+
+We can also add add this to a class
+
+```js
+componentDidMount() {
+  somthing to do everytime the component renders
+}
+
+componentWillUnmount() {
+  something to do when the component is unmounting(going away)
+}
+```
 
 ### Handling event
 - Handling events is very similar to how you would handle events without React
